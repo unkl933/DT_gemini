@@ -19,14 +19,20 @@
 $(call inherit-product, device/xiaomi/gemini/device.mk)
 
 # Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
-#GApps
-TARGET_GAPPS_ARCH := arm64
+# Official Nusantara
+TARGET_USES_BLUR := true
+USE_PIXEL_CHARGING := true
+NAD_BUILD_TYPE ?= UNOFFICIAL
+TARGET_BOOT_ANIMATION_RES := 1080
+USE_GAPPS ?= true
+USE_AOSP_CLOCK := true
+USE_LAWNCHAIR := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_gemini
+PRODUCT_NAME := nad_gemini
 PRODUCT_DEVICE := gemini
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 5
