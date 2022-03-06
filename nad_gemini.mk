@@ -30,6 +30,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 USE_GAPPS ?= true
 USE_AOSP_CLOCK := true
 USE_LAWNCHAIR := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := nad_gemini
