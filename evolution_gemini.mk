@@ -18,34 +18,22 @@
 # Inherit from gemini device
 $(call inherit-product, device/xiaomi/gemini/device.mk)
 
-# Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+# Inherit some common evolutionX stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Official Nusantara
-TARGET_USES_BLUR := true
-USE_PIXEL_CHARGING := true
-NAD_BUILD_TYPE ?= UNOFFICIAL
+# Official evolution
+EVO_BUILD_TYPE := UNOFFICIAL
+EXTRA_UDFPS_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1080
-USE_GAPPS ?= true
-USE_AOSP_CLOCK := true
-USE_LAWNCHAIR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := nad_gemini
+PRODUCT_NAME := evolution_gemini
 PRODUCT_DEVICE := gemini
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Mi 5
 PRODUCT_MANUFACTURER := Xiaomi
 
+PRODUCT_CHARACTERISTICS := nosdcard
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="gemini" \
-    PRIVATE_BUILD_DESC="gemini-user 8.0.0 OPR1.170623.032 V9.6.1.0.OAAMIFD release-keys"
-
-# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "Xiaomi/gemini/gemini:8.0.0/OPR1.170623.032/V9.6.1.0.OAAMIFD:user/release-keys"
-
-TARGET_VENDOR := Xiaomi

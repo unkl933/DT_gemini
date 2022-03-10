@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_gemini.mk
+    $(LOCAL_DIR)/evolution_gemini.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_gemini-user \
-    nad_gemini-userdebug \
-    nad_gemini-eng
+    evolution_gemini-user \
+    evolution_gemini-userdebug \
+    evolution_gemini-eng
