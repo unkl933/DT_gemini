@@ -27,6 +27,7 @@ EVO_BUILD_TYPE := UNOFFICIAL
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_BUILD_GRAPHENEOS_CAMERA := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := evolution_gemini
