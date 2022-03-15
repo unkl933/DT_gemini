@@ -19,7 +19,7 @@
 $(call inherit-product, device/xiaomi/gemini/device.mk)
 
 # Inherit some common xdroid stuff.
-$(call inherit-product, vendor/xdroid/config/common_full_phone.mk)
+$(call inherit-product, vendor/xdroid/config/common.mk)
 
 # Official xdroid
 XDROID_BOOT := 1080
