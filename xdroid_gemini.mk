@@ -18,19 +18,19 @@
 # Inherit from gemini device
 $(call inherit-product, device/xiaomi/gemini/device.mk)
 
-# Inherit some common evolutionX stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
+# Inherit some common xdroid stuff.
+$(call inherit-product, vendor/xdroid/config/common_full_phone.mk)
 
-# Official evolution
-EVO_BUILD_TYPE := UNOFFICIAL
-EXTRA_UDFPS_ANIMATIONS := true
-TARGET_BOOT_ANIMATION_RES := 1080
+# Official xdroid
+XDROID_BOOT := 1080
+XDROID_MAINTAINER := phentem
+XDROID_BOOT_DARK := true
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_BUILD_GRAPHENEOS_CAMERA := true
-
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_gemini
+PRODUCT_NAME := xdroid_gemini
 PRODUCT_DEVICE := gemini
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
