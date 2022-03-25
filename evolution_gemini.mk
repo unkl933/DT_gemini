@@ -22,12 +22,17 @@ $(call inherit-product, device/xiaomi/gemini/device.mk)
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Lawnchair
+$(call inherit-product, vendor/lawnchair/lawnchair.mk)
+
 # Official evolution
 EVO_BUILD_TYPE := UNOFFICIAL
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BUILD_GRAPHENEOS_CAMERA := true
+TARGET_SUPPORTS_ADAPTIVE_CHARGING := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Evolution-X things
 WITH_GOOGLE_APEX := false
