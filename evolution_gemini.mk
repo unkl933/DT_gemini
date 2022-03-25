@@ -23,7 +23,7 @@ $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Lawnchair
-$(call inherit-product, vendor/lawnchair/lawnchair.mk)
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 
 # Official evolution
 EVO_BUILD_TYPE := UNOFFICIAL
