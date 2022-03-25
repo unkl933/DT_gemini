@@ -29,6 +29,11 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BUILD_GRAPHENEOS_CAMERA := true
 
+# Evolution-X things
+WITH_GOOGLE_APEX := false
+EVO_MAINTAINER := BarokahProject
+EVO_SUPPORT_URL := https://t.me/BarokahProject
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := evolution_gemini
 PRODUCT_DEVICE := gemini
