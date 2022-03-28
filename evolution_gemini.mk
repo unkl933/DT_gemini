@@ -34,11 +34,6 @@ TARGET_BUILD_GRAPHENEOS_CAMERA := true
 TARGET_SUPPORTS_ADAPTIVE_CHARGING := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# Evolution-X things
-WITH_GOOGLE_APEX := false
-EVO_MAINTAINER := BarokahProject
-EVO_SUPPORT_URL := https://t.me/BarokahProject
-
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := evolution_gemini
 PRODUCT_DEVICE := gemini
