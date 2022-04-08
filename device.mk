@@ -51,8 +51,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
 # ConfigPanel
-PRODUCT_PACKAGES += \
-    ConfigPanel
+# PRODUCT_PACKAGES += \
+    # ConfigPanel
 
 # Consumer IR
 PRODUCT_PACKAGES += \
@@ -62,6 +62,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.target.rc \
     init.recovery.qcom.rc
+
+# Device Features
+PRODUCT_PACKAGES += \
+    DeviceFeatures
 
 # Fingerprint
 PRODUCT_PACKAGES += \
