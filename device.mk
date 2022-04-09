@@ -64,8 +64,8 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc
 
 # Device Features
-PRODUCT_PACKAGES += \
-    DeviceFeatures
+# PRODUCT_PACKAGES += \
+    #DeviceFeatures
 
 # Fingerprint
 PRODUCT_PACKAGES += \
