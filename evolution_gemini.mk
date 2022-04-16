@@ -26,6 +26,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 
 # Official evolution
+WITH_GOOGLE_APEX := false
 EVO_BUILD_TYPE := UNOFFICIAL
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1080
